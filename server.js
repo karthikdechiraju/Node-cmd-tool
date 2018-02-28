@@ -32,6 +32,14 @@ stdin.addListener("data", function(d) {
 				Api.synonym(string_arr[1])
 				break;
 
+			case 'ant':
+				Api.antonym(string_arr[1])
+				break;
+
+			case 'ex':
+				Api.example(string_arr[1])
+				break;
+
 			default:
 				console.log(string_arr[0] + ' is not defined')
 		}
