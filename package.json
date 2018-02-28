@@ -8,5 +8,8 @@
     "start": "node server.js"
   },
   "author": "Karthik Dechiraju",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
 }
