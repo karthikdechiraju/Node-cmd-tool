@@ -1,12 +1,8 @@
 const http = require('http')
 const port = 3000
 var Api = require('./api')
-const requestHandler = (request, response) => {
-	console.log(request.url)
-	response.end('Hello Node.js Server!')
-}
 
-const server = http.createServer(requestHandler)
+const server = http.createServer()
 
 server.listen(port, (err) => {
 	if (err) {
