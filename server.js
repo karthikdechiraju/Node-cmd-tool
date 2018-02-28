@@ -40,10 +40,22 @@ stdin.addListener("data", function(d) {
 				Api.example(string_arr[1])
 				break;
 
+			case 'today':
+				Api.word_of_the_day()
+				break;
+
+			case 'dict':
+				Api.definition(string_arr[1])
+				Api.synonym(string_arr[1])
+				Api.antonym(string_arr[1])
+				Api.example(string_arr[1])
+				break;
+			
 			default:
 				console.log(string_arr[0] + ' is not defined')
+				break;
 		}
 	}else{
-
+		Api.word_of_the_day()
 	}
 });
