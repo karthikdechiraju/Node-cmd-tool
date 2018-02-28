@@ -111,3 +111,4 @@ module.exports.word_of_the_day = function(){
 		console.log('')
 	});
 }
+
